@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Rahul AI Portfolio</title>
+    <meta name="description" content="Projects by Rahul - Transforming business with intelligent automation and AI.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">Rahul Bora</span>
+            <a href="contact.html" class="btn-nav-contact">Contact Me</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html" class="active">Project Section</a>
+            <a href="certification.html">Certifications</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="extracurriculars.html">Extra-Curricular Activities</a>
+            <a href="education.html">Education</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="projects" class="about-section" style="padding-top: 8rem;">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 style="margin-bottom: 1.5rem; text-align: center; width: 100%;">Car Damage Classification System</h3>
+                        <div class="project-split" style="display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: stretch;">
+                            <div class="project-image-left" style="flex: 1; min-width: 300px; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.2); border-radius: 12px; padding: 1rem; border: 1px solid rgba(0, 240, 255, 0.05);">
+                                <img src="FB_15.jpg" alt="Car Damage Image" style="width: 100%; height: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); object-fit: cover;">
+                            </div>
+                            <div class="project-info-right" style="flex: 1.5; min-width: 300px;">
+                                <p class="project-subtitle" style="color: #94a3b8; margin-bottom: 1rem;">(Deep Learning Project)
+                                </p>
+                                <ul class="project-description">
+                                    <li>Developed an image classification model using <strong>PyTorch</strong>, implementing
+                                        both a custom <strong>CNN architecture</strong> and transfer learning approaches with
+                                        <strong>ResNet50</strong> and <strong>EfficientNet-B0</strong>.
+                                    </li>
+                                    <li>Applied advanced data preprocessing and augmentation techniques (flip, rotation, color
+                                        jitter, normalization) to improve model generalization and robustness.</li>
+                                    <li>Trained models using <strong>CrossEntropyLoss</strong> and <strong>Adam
+                                            optimizer</strong>, with fine-tuning of pretrained networks and use of <strong>Batch
+                                            Normalization</strong> and <strong>Dropout</strong> to reduce overfitting.</li>
+                                    <li>Achieved <strong>~79% accuracy</strong> with balanced <strong>F1-score (~0.79)</strong>,
+                                        and performed detailed evaluation using precision, recall, and classification report to
+                                        analyze class-wise performance.</li>
+                                </ul>
+                                <div class="tech-stack" style="margin-top: 1.5rem;">
+                                    <span class="tech-tag">PyTorch</span>
+                                    <span class="tech-tag">CNN</span>
+                                    <span class="tech-tag">ResNet50</span>
+                                    <span class="tech-tag">EfficientNet</span>
+                                </div>
+                                <div class="project-links" style="margin-top: 2rem;">
+                                    <a href="https://github.com/rahulbora-45/Damage-Prediction" target="_blank"
+                                        rel="noopener noreferrer" class="github-link"><i class="fab fa-github"></i> View
+                                        Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 style="margin-bottom: 1.5rem; text-align: center; width: 100%;">Bangalore House Price Prediction System</h3>
+                        <div class="project-split" style="display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: stretch;">
+                            <div class="project-image-left" style="flex: 1; min-width: 300px; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.2); border-radius: 12px; padding: 1rem; border: 1px solid rgba(0, 240, 255, 0.05);">
+                                <img src="House Photo.jpg" alt="Bangalore House Price Prediction" style="width: 100%; height: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); object-fit: cover;">
+                            </div>
+                            <div class="project-info-right" style="flex: 1.5; min-width: 300px;">
+                                <p class="project-subtitle" style="color: #94a3b8; margin-bottom: 1rem;">(Machine Learning
+                                    Project)
+                                </p>
+                                <ul class="project-description">
+                                    <li>Developed a regression-based prediction system using <strong>Scikit-learn</strong>,
+                                        implementing models like <strong>Linear Regression</strong>, <strong>Decision
+                                            Tree</strong>, and <strong>Random Forest</strong> to estimate housing prices in
+                                        Bangalore.</li>
+                                    <li>Performed extensive data preprocessing including handling missing values, feature
+                                        engineering (BHK extraction, price_per_sqft), outlier removal, and one-hot encoding for
+                                        categorical variables.</li>
+                                    <li>Optimized model performance using <strong>GridSearchCV</strong> for hyperparameter
+                                        tuning, achieving a high <strong>R² score of ~0.99</strong> with the Decision Tree
+                                        Regressor.</li>
+                                    <li>Built and deployed a <strong>Flask-based web application</strong> that allows users to
+                                        input property details and receive real-time price predictions.</li>
+                                </ul>
+                                <div class="tech-stack" style="margin-top: 1.5rem;">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Scikit-learn</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">NumPy</span>
+                                    <span class="tech-tag">Flask</span>
+                                    <span class="tech-tag">Matplotlib</span>
+                                    <span class="tech-tag">Seaborn</span>
+                                </div>
+                                <div class="project-links" style="margin-top: 2rem;">
+                                    <a href="https://github.com/rahulbora-45/BangaloreHousePricePrediction" target="_blank"
+                                        rel="noopener noreferrer" class="github-link"><i class="fab fa-github"></i> View
+                                        Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 style="margin-bottom: 1.5rem; text-align: center; width: 100%;">Electric Vehicle Adoption and Trend Analysis</h3>
+                        <div class="project-split" style="display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: stretch;">
+                            <div class="project-image-left" style="flex: 1; min-width: 300px; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.2); border-radius: 12px; padding: 1rem; border: 1px solid rgba(0, 240, 255, 0.05);">
+                                <img src="electric car.webp" alt="Electric Vehicle Adoption" style="width: 100%; height: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); object-fit: cover;">
+                            </div>
+                            <div class="project-info-right" style="flex: 1.5; min-width: 300px;">
+                                <p class="project-subtitle" style="color: #94a3b8; margin-bottom: 1rem;">(Data Analysis Project)
+                                </p>
+                                <ul class="project-description">
+                                    <li>Performed comprehensive data analysis on electric vehicle population data using
+                                        <strong>Python</strong>, identifying trends in EV adoption, vehicle types (BEV vs PHEV),
+                                        and manufacturer dominance across Washington State.
+                                    </li>
+                                    <li>Conducted detailed <strong>Exploratory Data Analysis (EDA)</strong> including data
+                                        cleaning, handling missing values, and visualization of key patterns such as electric
+                                        range distribution, model year growth, and geographic distribution.</li>
+                                    <li>Analyzed EV adoption trends using visualizations like histograms, bar charts, and line
+                                        plots, revealing rapid growth after 2018 and dominance of Battery Electric Vehicles
+                                        (BEVs).</li>
+                                    <li>Derived actionable insights on top cities, popular manufacturers (Tesla, Nissan, etc.),
+                                        and performance metrics, helping understand real-world EV adoption behavior and
+                                        infrastructure impact.</li>
+                                </ul>
+                                <div class="tech-stack" style="margin-top: 1.5rem;">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">NumPy</span>
+                                    <span class="tech-tag">Matplotlib</span>
+                                    <span class="tech-tag">Seaborn</span>
+                                    <span class="tech-tag">Jupyter Notebook</span>
+                                </div>
+                                <div class="project-links" style="margin-top: 2rem;">
+                                    <a href="https://github.com/rahulbora-45/Electric_Vehicle_Analysis" target="_blank"
+                                        rel="noopener noreferrer" class="github-link"><i class="fab fa-github"></i> View
+                                        Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
