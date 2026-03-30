@@ -715,6 +715,12 @@ main {
     transform: translateY(-3px) scale(1.05);
 }
 
+.tag i, .tag img {
+    margin-right: 6px;
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+
 /* Project Tech Stack Tags */
 .tech-stack {
     display: flex;
